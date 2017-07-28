@@ -7,8 +7,7 @@ $(document).ready(function(){
     $('.food').css('color','pink');
     $('#chief').css('color','green');
     $('ul').first().children().last().css('color','black');
-    //$('#kevin li:last-child').click(function(){
-    //$('#kevin li:last-child').css('color','black')//
-    //}); //
-    
+    $('#kevinButton').on('click', function(){
+        console.log('button was clicked');
+    });
 });
