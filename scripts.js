@@ -28,7 +28,12 @@ $(document).ready(function () {
         //input text should be added to the list
         var favoriteThing = $('#brendtInput').val()
         $('#brendt').append('<li>' + favoriteThing + '</li>');
-
-
     })
+    //delete button
+    $('.deleteKevinButton').on('click', function (){
+        // $(this) calls clicked item to log; refers to the thing that was clicked on
+            console.log('test delete', $(this))
+
+            $(this).parent().remove()
+        })
 });
