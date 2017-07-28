@@ -15,8 +15,19 @@ $(document).ready(function () {
         //clickNumber();
         clicks++;
         console.log('button was clicked', clicks, 'times.');
-        //add Lightsaboers to the list
-        $('#kevin').append('<li>Lightsaber</li>');
+        //input text should be added to the list
+        var favoriteThing = $('#kevinInput').val()
+        $('#kevin').append('<li>' + favoriteThing + '</li>');
+
+
+    })
+    $('#brendtButton').on('click', function () {
+        //clickNumber();
+        clicks++;
+        console.log('button was clicked', clicks, 'times.');
+        //input text should be added to the list
+        var favoriteThing = $('#brendtInput').val()
+        $('#brendt').append('<li>' + favoriteThing + '</li>');
 
 
     })
