@@ -6,6 +6,9 @@ $(document).ready(function(){
     $('#kevin li').css('color','maroon')
     $('.food').css('color','pink');
     $('#chief').css('color','green');
-    $('li')
+    $('ul').first().children().last().css('color','black');
+    //$('#kevin li:last-child').click(function(){
+    //$('#kevin li:last-child').css('color','black')//
+    //}); //
     
 });
