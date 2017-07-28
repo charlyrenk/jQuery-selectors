@@ -17,10 +17,17 @@ $(document).ready(function () {
         console.log('button was clicked', clicks, 'times.');
         //input text should be added to the list
         var favoriteThing = $('#kevinInput').val()
-        $('#kevin').append('<li>' + favoriteThing + '</li>');
+        $('#kevin').append('<li>' + favoriteThing +
+            '<button class="deleteKevinButton">delete</button></li>');
+    });
 
-
+    $('#kevin').on('click', '.deleteKevinButton', function () {
+        $(this).parent().remove();
     })
+
+
+
+
     $('#brendtButton').on('click', function () {
         //clickNumber();
         clicks++;
@@ -30,10 +37,10 @@ $(document).ready(function () {
         $('#brendt').append('<li>' + favoriteThing + '</li>');
     })
     //delete button
-    $('.deleteKevinButton').on('click', function (){
-        // $(this) calls clicked item to log; refers to the thing that was clicked on
-            console.log('test delete', $(this))
+    //     $('.deleteKevinButton').on('click',  function (){
+    //         // $(this) calls clicked item to log; refers to the thing that was clicked on
+    //             console.log('test delete', $(this))
 
-            $(this).parent().remove()
-        })
+    //             $(this).parent().remove()
+    //         })
 });
